@@ -1,4 +1,42 @@
-# Fleet Adapter Ecobot
+# Fleet Adapter Caato
+
+Hello! To run this package, clone this into your `rmf_ws/src` folder and run `colcon build` in your workspace directory (probably `~/rmf_ws`)
+
+right now, I run the caato fleet adapter with the following flags but this is still in very early stages:
+
+## What to run
+
+### 1. Running our fastapi server (uvicorn)
+```bash
+#cd <your path>/caato2_ws
+source install/setup.bash
+
+roslaunch caato_fleet_client test.launch
+```
+
+### 2. Running rmf demos (office)
+```bash
+#cd <your path>/rmf_ws
+source install/setup.bash
+ros2 launch rmf_demos office.launch.xml run_fleet_adapters:=0
+```
+
+### 3. Running caato fleet adapter
+```bash
+#cd <your path>/rmf_ws
+source install/setup.bash
+ros2 run fleet_adapter_caato fleet_adapter_caato \
+-c src/fleet_adapter_caato/configs/caato_config.yaml \
+-n install/rmf_demos_maps/share/rmf_demos_maps/maps/office/nav_graphs/0.yaml \
+-s "ws://localhost:8000/_internal" \
+-tf src/fleet_adapter_caato/configs/test_api_config.yaml
+```
+We will eventually get both of these maps to align (running caato2 in RMF) but
+this is still in very early developmental stages so ... ya give chance plz.
+
+
+
+# Readme from the original repository below:
 
 ![](../media/media/fleet_adapter_ecobot.gif)
 
