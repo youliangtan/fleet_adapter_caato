@@ -35,7 +35,7 @@ class CaatoAPI:
             print("[ClientAPI] unable to query API server")
             self.connected = False
 
-
+        print(config_file)
         # self.connected = True
         with open(config_file, "r") as f:
             config_yaml = yaml.safe_load(f)
@@ -57,7 +57,7 @@ class CaatoAPI:
         print("[TEST ECOBOT CLIENT API] successfully setup mock client api class")
 
     def data(self):
-        url = self.prefix + f"/device_status"
+        url = self.prefix + f"/"
         try:
             response = requests.get(url, timeout=self.timeout)
             response.raise_for_status()
@@ -110,9 +110,30 @@ class CaatoAPI:
             coordinate frame and theta is in degrees. This functions should
             return True if the robot received the command, else False'''
         assert(len(pose) > 2)
-        self.mock_location = pose
-        print(f"[TEST CLIENT API] moved to mock location {pose}")
-        return True
+        # self.mock_location = pose
+        # print(f"[TEST CLIENT API] moved to mock location {pose}")
+        # return True
+
+        url = self.prefix + f"/navigate"
+        data = {}
+        data["nav_goal_x"] = pose[0]
+        data["nav_goal_y"] = pose[1]
+        data["nav_goal_z"] = pose[2]
+        try:
+            response = requests.post(url, timeout=self.timeout, json=data)
+            response.raise_for_status()
+            data = response.json()
+            # if self.debug:
+            #     print(f"[def position] - Response: {data}")
+            # x = data['pose_x']
+            # y = data['pose_y']
+            # angle = data['pose_theta']
+            return True
+        except HTTPError as http_err:
+            print(f"[def position] - HTTP error: {http_err}")
+        except Exception as err:
+            print(f"[def position] - Other error: {err}")
+        return False
 
     def navigate_to_waypoint(self, waypoint_name, map_name):
         ''' Ask the robot to navigate to a preconfigured waypoint on a map.
@@ -129,23 +150,83 @@ class CaatoAPI:
         return True
 
     def pause(self):
-        print(f"[TEST CLIENT API] Pause Robot")
-        self.is_mock_cleaning = True
-        return True
+        print(f"Pause Robot")
+        url = self.prefix + f"/pause_navigation"
+        data = {}
+        try:
+            response = requests.post(url, timeout=self.timeout, json=data)
+            response.raise_for_status()
+            data = response.json()
+            # if self.debug:
+            #     print(f"[def position] - Response: {data}")
+            # x = data['pose_x']
+            # y = data['pose_y']
+            # angle = data['pose_theta']
+            return True
+        except HTTPError as http_err:
+            print(f"[def position] - HTTP error: {http_err}")
+        except Exception as err:
+            print(f"[def position] - Other error: {err}")
+        return False
 
     def resume(self):
-        print(f"[TEST CLIENT API] Resume Robot")
-        self.is_mock_cleaning = True
-        return True
+        print(f"resume Robot")
+        url = self.prefix + f"/resume_navigation"
+        data = {}
+        try:
+            response = requests.post(url, timeout=self.timeout, json=data)
+            response.raise_for_status()
+            data = response.json()
+            # if self.debug:
+            #     print(f"[def position] - Response: {data}")
+            # x = data['pose_x']
+            # y = data['pose_y']
+            # angle = data['pose_theta']
+            return True
+        except HTTPError as http_err:
+            print(f"[def position] - HTTP error: {http_err}")
+        except Exception as err:
+            print(f"[def position] - Other error: {err}")
+        return False
 
     def stop(self):
         ''' Returns true if robot was successfully stopped; else False'''
-        print(f"[TEST CLIENT API] STOP TASK##")
-        return True
+        print(f"Stop Robot")
+        url = self.prefix + f"/stop"
+        data = {}
+        try:
+            response = requests.post(url, timeout=self.timeout, json=data)
+            response.raise_for_status()
+            data = response.json()
+            # if self.debug:
+            #     print(f"[def position] - Response: {data}")
+            # x = data['pose_x']
+            # y = data['pose_y']
+            # angle = data['pose_theta']
+            return True
+        except HTTPError as http_err:
+            print(f"[def position] - HTTP error: {http_err}")
+        except Exception as err:
+            print(f"[def position] - Other error: {err}")
+        return False
 
     def navigation_completed(self):
-        print(f"[TEST CLIENT API] MOCK NAV completed")
-        return True
+        url = self.prefix + f"/navigation_status"
+        try:
+            response = requests.get(url, timeout=self.timeout)
+            response.raise_for_status()
+            if self.debug:
+                print(f"[def data] - Response: {response.json()}")
+            data = response.json()
+            if data["navigation_status_code"] == 3:
+                return True
+            elif data["navigation_status_code"] == 1 or data["navigation_status_code"] == 0:
+                return False
+        except HTTPError as http_err:
+            print(f"[def data] - HTTP error: {http_err}")
+        except Exception as err:
+            print(f"[def data] - Other error: {err}")
+        return False
 
     def task_completed(self):
         ''' For ecobots the same function is used to check completion of navigation & cleaning'''

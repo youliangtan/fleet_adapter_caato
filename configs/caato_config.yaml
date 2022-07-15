@@ -38,7 +38,7 @@ rmf_fleet:
 robots:
   caato_1:
     caato_config:
-      base_url: "http://127.0.0.1:5000"
+      base_url: "http://127.0.0.1:3030"
       max_delay: 30.0 # allowed seconds of delay of the current itinerary before it gets interrupted and replanned
       filter_waypoints: True
       cleaning_task_prefix: "" # the prefix of the cleaning task created
@@ -59,9 +59,18 @@ robots:
 # Format robot_map: {rmf_map_name: rmf_map, reference_coordinates: 
 #                                 {rmf: [[x, y]....], rmf: [[x, y]....]}}
 rmf_transform:
-  mock_test_robot_map:
-    rmf_map_name: "L1"
-    transform: [1.33, 0.057, -1.598, 0.049] # This is obtained from traffic-editor
+  TRL_L2:
+    rmf_map_name: "TRL_L2"
+    reference_coordinates:
+      rmf: [[24.86, -24.85],
+            [22.47, -26.83],
+            [13.15, -16.87],
+            [15.49, -14.93] ]
+      robot: [ [15.20, -21.07],
+                [12.66, -23.39],
+                [3.07, -13.00],
+                [5.44, -10.81] ]
+    #transform: [1.33, 0.057, 0, 1.0] # This is obtained from traffic-editor
   ## User can also provide a pair of "reference_coordinates"
   # mock_test_robot_map2:
   #   rmf_map_name: "L1"
@@ -74,3 +83,24 @@ rmf_transform:
   #               [2293, 703],
   #               [2816, 710],
   #               [4058, 747] ]
+
+mock_clean_path: [
+  [60.58, 186.84, 0],
+  [81.59, 169.53, 0],
+  [108.94, 162.66, 45],
+  [137.94, 180.66, 90],
+  [137.01, 226.99, 90],
+  [132.72, 275.21, 90],
+  [131.54, 318.55, 120],
+  [127.56, 355.20, 180],
+  [99.97, 358.42, -140],
+  [66.74, 325.73, -90],
+  [71.04, 289.43, -90],
+  [73.83, 235.87, -90],
+  [77.11, 200.20, -90],
+  [60.58, 186.84, -90]
+]
+mock_dock_path: []
+dock_position: [10.2, -8.27, 0.71] # charging point
+mock_location: [0, 0, 0] # this indicate where the robot will start
+mock_robot_map_name: "TRL_L2"

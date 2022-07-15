@@ -169,7 +169,8 @@ def initialize_fleet(config_yaml, nav_graph_path, node, server_uri, args):
                 # else:
                 node.get_logger().warn(
                 f"Testing fleet adapter with Caato api")
-                api = CaatoAPI(robot_config['base_url'], args.test_api_config_file, robot_config['cleaning_task_prefix'])
+                # api = CaatoAPI(robot_config['base_url'], args.test_api_config_file, robot_config['cleaning_task_prefix'])
+                api = CaatoAPI(robot_config['base_url'], args.config_file, robot_config['cleaning_task_prefix'])
 
                 if not api.online():
                     continue
@@ -305,6 +306,8 @@ def main(argv=sys.argv):
     print(f"Starting caato fleet adapter...")
 
     config_path = args.config_file
+    print(f"config path is: ")
+    print(config_path)
     nav_graph_path = args.nav_graph
 
     # Load config and nav graph yamls

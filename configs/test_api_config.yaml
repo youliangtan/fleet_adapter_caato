@@ -19,5 +19,5 @@ mock_clean_path: [
 ]
 mock_dock_path: []
 dock_position: [99.70, 392.85, 0] # charging point
-mock_location: [60.58, 381.85, 0] # this indicate where the robot will start
+mock_location: [0, 0, 0] # this indicate where the robot will start
 mock_robot_map_name: "mock_test_robot_map"
