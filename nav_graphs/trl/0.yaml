@@ -1,0 +1,1088 @@
+building_name: trl
+levels:
+  TRL_L2:
+    lanes:
+    - - 0
+      - 1
+      - {speed_limit: 0}
+    - - 1
+      - 0
+      - {speed_limit: 0}
+    - - 1
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 1
+      - {speed_limit: 0}
+    - - 3
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 3
+      - {speed_limit: 0}
+    - - 4
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 4
+      - {speed_limit: 0}
+    - - 5
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 5
+      - {speed_limit: 0}
+    - - 7
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 7
+      - {speed_limit: 0}
+    - - 8
+      - 9
+      - {speed_limit: 0}
+    - - 9
+      - 8
+      - {speed_limit: 0}
+    - - 10
+      - 11
+      - {speed_limit: 0}
+    - - 11
+      - 10
+      - {speed_limit: 0}
+    - - 12
+      - 13
+      - {speed_limit: 0}
+    - - 13
+      - 12
+      - {speed_limit: 0}
+    - - 13
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 13
+      - {speed_limit: 0}
+    - - 14
+      - 15
+      - {dock_name: L2_zoneB, speed_limit: 0}
+    - - 15
+      - 14
+      - {speed_limit: 0, undock_name: L2_zoneB}
+    - - 16
+      - 17
+      - {dock_name: L2_zoneC, speed_limit: 0}
+    - - 17
+      - 16
+      - {speed_limit: 0, undock_name: L2_zoneC}
+    - - 18
+      - 19
+      - {speed_limit: 0}
+    - - 19
+      - 18
+      - {speed_limit: 0}
+    - - 18
+      - 20
+      - {speed_limit: 0}
+    - - 20
+      - 18
+      - {speed_limit: 0}
+    - - 21
+      - 3
+      - {speed_limit: 0}
+    - - 3
+      - 21
+      - {speed_limit: 0}
+    - - 21
+      - 22
+      - {dock_name: L2_zoneA, speed_limit: 0}
+    - - 22
+      - 21
+      - {speed_limit: 0, undock_name: L2_zoneA}
+    - - 2
+      - 23
+      - {speed_limit: 0}
+    - - 23
+      - 2
+      - {speed_limit: 0}
+    - - 23
+      - 21
+      - {speed_limit: 0}
+    - - 21
+      - 23
+      - {speed_limit: 0}
+    - - 6
+      - 24
+      - {speed_limit: 0}
+    - - 24
+      - 6
+      - {speed_limit: 0}
+    - - 24
+      - 14
+      - {speed_limit: 0}
+    - - 14
+      - 24
+      - {speed_limit: 0}
+    - - 14
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 14
+      - {speed_limit: 0}
+    - - 9
+      - 25
+      - {speed_limit: 0}
+    - - 25
+      - 9
+      - {speed_limit: 0}
+    - - 25
+      - 16
+      - {speed_limit: 0}
+    - - 16
+      - 25
+      - {speed_limit: 0}
+    - - 16
+      - 10
+      - {speed_limit: 0}
+    - - 10
+      - 16
+      - {speed_limit: 0}
+    - - 26
+      - 27
+      - {speed_limit: 0}
+    - - 27
+      - 26
+      - {speed_limit: 0}
+    - - 28
+      - 29
+      - {}
+    - - 29
+      - 28
+      - {}
+    - - 28
+      - 30
+      - {}
+    - - 30
+      - 28
+      - {}
+    - - 28
+      - 31
+      - {}
+    - - 31
+      - 28
+      - {}
+    - - 28
+      - 32
+      - {}
+    - - 32
+      - 28
+      - {}
+    - - 32
+      - 33
+      - {}
+    - - 33
+      - 32
+      - {}
+    - - 32
+      - 12
+      - {}
+    - - 12
+      - 32
+      - {}
+    - - 28
+      - 34
+      - {}
+    - - 34
+      - 28
+      - {}
+    - - 34
+      - 35
+      - {}
+    - - 35
+      - 34
+      - {}
+    - - 34
+      - 0
+      - {}
+    - - 0
+      - 34
+      - {}
+    - - 26
+      - 36
+      - {}
+    - - 36
+      - 26
+      - {}
+    - - 26
+      - 37
+      - {}
+    - - 37
+      - 26
+      - {}
+    - - 37
+      - 28
+      - {}
+    - - 28
+      - 37
+      - {}
+    - - 26
+      - 38
+      - {}
+    - - 38
+      - 26
+      - {}
+    - - 39
+      - 18
+      - {}
+    - - 18
+      - 39
+      - {}
+    - - 38
+      - 39
+      - {door_name: service-lobby_L2_door}
+    - - 39
+      - 38
+      - {door_name: service-lobby_L2_door}
+    vertices:
+    - - 19.595172149798792
+      - -13.017677748711533
+      - {name: ''}
+    - - 25.8871207324674
+      - -21.479949330745754
+      - {name: ''}
+    - - 26.061572405005496
+      - -29.119228488921486
+      - {name: ''}
+    - - 54.70048529959385
+      - -29.01457933282161
+      - {name: ''}
+    - - 54.63068278315563
+      - -28.35183775656073
+      - {name: ''}
+    - - 71.68849522743477
+      - -27.933241132161243
+      - {name: L2_staircase}
+    - - 74.02562330129359
+      - -25.66580633762571
+      - {name: ''}
+    - - 94.60655117619181
+      - -25.456508025425965
+      - {name: ''}
+    - - 100.01346065372351
+      - -27.409995351661884
+      - {name: ''}
+    - - 102.6993828355436
+      - -28.66578522486035
+      - {name: ''}
+    - - 134.30331874059002
+      - -29.01457933282161
+      - {name: ''}
+    - - 136.43125773936404
+      - -31.80525990785651
+      - {name: entrance}
+    - - 9.382048089717857
+      - -18.510338361460764
+      - {name: L2_escalator}
+    - - 19.245067196458404
+      - -29.768206188701587
+      - {name: ''}
+    - - 84.08450455509791
+      - -25.62506089375801
+      - {name: L2_zoneB_start}
+    - - 85.48339504885047
+      - -24.61276054973138
+      - {dock_name: L2_zoneB, is_cleaning_zone: true, name: L2_zoneB}
+    - - 120.97966783296854
+      - -28.508702253595615
+      - {name: L2_zoneC_start}
+    - - 119.00924875391897
+      - -29.538480536010532
+      - {dock_name: L2_zoneC, is_bookshelf_zone: true, is_cleaning_zone: false, name: L2_zoneC}
+    - - 16.31893259891428
+      - -3.6044970812395376
+      - {is_parking_spot: false, is_passthrough_point: true, name: L2_liftlobby}
+    - - 19.302088970450196
+      - -3.683038566871905
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot_2X_spawn,
+        spawn_robot_name: tinyRobot_2X, spawn_robot_type: TinyRobot}
+    - - 16.385567239019625
+      - -6.980251643822361
+      - {lift: service_lift, lift_cabin: service_lift, name: ''}
+    - - 39.49500661312842
+      - -29.106447746475048
+      - {name: L2_zoneA_start}
+    - - 38.352932576568755
+      - -29.95063217062934
+      - {dock_name: L2_zoneA, is_bookshelf_zone: true, is_cleaning_zone: false, name: L2_zoneA}
+    - - 37.044053465515866
+      - -29.13419397366646
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_2A_spawn,
+        spawn_robot_name: cleanerBotA_2A, spawn_robot_type: CleanerBotA}
+    - - 82.54480742020469
+      - -25.60736448113987
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_2B_spawn,
+        spawn_robot_name: cleanerBotA_2B, spawn_robot_type: CleanerBotA}
+    - - 117.81441319084965
+      - -28.755031947755544
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_2C_spawn,
+        spawn_robot_name: cleanerBotA_2C, spawn_robot_type: CleanerBotA}
+    - - 8.61858989349447
+      - -4.935988275082273
+      - {name: ''}
+    - - 5.871167215970586
+      - -4.935988275082273
+      - {is_holding_point: true, is_parking_spot: true, name: L2_holding}
+    - - 9.98165061355105
+      - -12.83120999353149
+      - {is_passthrough_point: true, name: L2_junction}
+    - - 12.69641139371182
+      - -10.707968190699326
+      - {is_charger: true, is_parking_spot: true, name: tinyRobot_2T_spawn, spawn_robot_name: tinyRobot_2T,
+        spawn_robot_type: TinyRobot}
+    - - 6.227717159091653
+      - -13.008938779517388
+      - {is_charger: true, is_parking_spot: true, name: tinyRobot_2Y_spawn, spawn_robot_name: tinyRobot_2Y,
+        spawn_robot_type: TinyRobot}
+    - - 10.948836029112915
+      - -13.898347369251374
+      - {is_holding_point: true, is_parking_spot: true, name: standalone_1}
+    - - 8.982349486200706
+      - -15.870295767909921
+      - {name: ''}
+    - - 7.136569955282608
+      - -16.17157173087803
+      - {is_charger: true, is_parking_spot: true, name: tinyRobot_2Z_spawn, spawn_robot_name: tinyRobot_2Z,
+        spawn_robot_type: TinyRobot}
+    - - 15.054731467866453
+      - -12.431729864244192
+      - {name: ''}
+    - - 15.521173948603877
+      - -11.459847252740474
+      - {is_charger: true, is_parking_spot: true, name: tinyRobot_2W_spawn, spawn_robot_name: tinyRobot_2W,
+        spawn_robot_type: TinyRobot}
+    - - 7.84803128480084
+      - -2.627698799564114
+      - {is_charger: true, is_parking_spot: true, name: tinyRobot_2V_spawn, spawn_robot_name: tinyRobot_2V,
+        spawn_robot_type: TinyRobot}
+    - - 9.286902562616618
+      - -7.145090450246899
+      - {is_charger: true, is_parking_spot: true, name: tinyRobot_2U_spawn, spawn_robot_name: tinyRobot_2U,
+        spawn_robot_type: TinyRobot}
+    - - 10.87805037864035
+      - -3.5317451626982908
+      - {is_passthrough_point: true, name: ''}
+    - - 14.928999548585708
+      - -3.6401083807056733
+      - {name: ''}
+  TRL_L3:
+    lanes:
+    - - 0
+      - 1
+      - {door_name: service-lobby_L3_door, speed_limit: 0}
+    - - 1
+      - 0
+      - {door_name: service-lobby_L3_door, speed_limit: 0}
+    - - 1
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 1
+      - {speed_limit: 0}
+    - - 2
+      - 3
+      - {speed_limit: 0}
+    - - 3
+      - 2
+      - {speed_limit: 0}
+    - - 3
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 3
+      - {speed_limit: 0}
+    - - 4
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 4
+      - {speed_limit: 0}
+    - - 2
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 2
+      - {speed_limit: 0}
+    - - 6
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 6
+      - {speed_limit: 0}
+    - - 7
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 7
+      - {speed_limit: 0}
+    - - 8
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 8
+      - {speed_limit: 0}
+    - - 0
+      - 9
+      - {speed_limit: 0}
+    - - 9
+      - 0
+      - {speed_limit: 0}
+    - - 10
+      - 11
+      - {dock_name: L3_zoneA, speed_limit: 0}
+    - - 11
+      - 10
+      - {speed_limit: 0, undock_name: L3_zoneA}
+    - - 5
+      - 12
+      - {speed_limit: 0}
+    - - 12
+      - 5
+      - {speed_limit: 0}
+    - - 12
+      - 10
+      - {speed_limit: 0}
+    - - 10
+      - 12
+      - {speed_limit: 0}
+    - - 10
+      - 13
+      - {speed_limit: 0}
+    - - 13
+      - 10
+      - {speed_limit: 0}
+    - - 13
+      - 14
+      - {dock_name: L3_zoneB, speed_limit: 0}
+    - - 14
+      - 13
+      - {speed_limit: 0, undock_name: L3_zoneB}
+    - - 13
+      - 15
+      - {speed_limit: 0}
+    - - 15
+      - 13
+      - {speed_limit: 0}
+    - - 16
+      - 17
+      - {dock_name: L3_zoneC, speed_limit: 0}
+    - - 17
+      - 16
+      - {speed_limit: 0, undock_name: L3_zoneC}
+    - - 15
+      - 18
+      - {speed_limit: 0}
+    - - 18
+      - 15
+      - {speed_limit: 0}
+    - - 18
+      - 16
+      - {speed_limit: 0}
+    - - 16
+      - 18
+      - {speed_limit: 0}
+    - - 0
+      - 19
+      - {}
+    - - 19
+      - 0
+      - {}
+    - - 0
+      - 20
+      - {}
+    - - 20
+      - 0
+      - {}
+    vertices:
+    - - 16.165635476302107
+      - -3.9112300967622295
+      - {is_parking_spot: false, is_passthrough_point: false, name: L3_liftlobby}
+    - - 8.993829788813857
+      - -3.7615458150148613
+      - {name: ''}
+    - - 9.31777457845628
+      - -10.25604190703645
+      - {name: tinyRobotCharger}
+    - - 17.52329578545182
+      - -13.698784083200383
+      - {name: ''}
+    - - 26.753000569638413
+      - -23.96509399105516
+      - {name: ''}
+    - - 25.978359014462473
+      - -28.199663783979553
+      - {name: ''}
+    - - 12.877065575073035
+      - -15.304959816028552
+      - {name: ''}
+    - - 11.948974970493767
+      - -18.114570119083595
+      - {name: ''}
+    - - 23.10785580103515
+      - -29.600647650383657
+      - {name: ''}
+    - - 16.393282545393514
+      - -6.978896379978856
+      - {lift: service_lift, lift_cabin: service_lift, name: ''}
+    - - 30.565743522376113
+      - -27.803490615743655
+      - {name: L3_zoneA_start}
+    - - 29.081859922287215
+      - -28.82062084052026
+      - {dock_name: L3_zoneA, is_cleaning_zone: true, name: L3_zoneA}
+    - - 28.623392618828788
+      - -27.843249988344727
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_3A_spawn,
+        spawn_robot_name: cleanerBotA_3A, spawn_robot_type: CleanerBotA}
+    - - 32.946059181393366
+      - -27.92132150427389
+      - {name: L3_zoneB_start}
+    - - 35.31697636423043
+      - -27.267669569945966
+      - {dock_name: L3_zoneB, is_cleaning_zone: true, name: L3_zoneB}
+    - - 66.74220853472404
+      - -27.787188230718343
+      - {name: ''}
+    - - 74.65399173566925
+      - -27.8863785042995
+      - {name: L3_zoneC_start}
+    - - 76.48150003864117
+      - -27.327971775139535
+      - {dock_name: L3_zoneC, is_cleaning_zone: true, name: L3_zoneC}
+    - - 73.56306101421883
+      - -27.991175727481988
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_3C_spawn,
+        spawn_robot_name: cleanerBotA_3C, spawn_robot_type: CleanerBotA}
+    - - 20.104642679750473
+      - -3.010275042476105
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot_3X_spawn,
+        spawn_robot_name: tinyRobot_3X, spawn_robot_type: TinyRobot}
+    - - 16.187592712395194
+      - -2.565200969465979
+      - {is_holding_point: true, is_parking_spot: true, name: L3_liftlobby_holding}
+  TRL_L4:
+    lanes:
+    - - 0
+      - 1
+      - {door_name: service-lobby_L4_door, speed_limit: 0}
+    - - 1
+      - 0
+      - {door_name: service-lobby_L4_door, speed_limit: 0}
+    - - 1
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 1
+      - {speed_limit: 0}
+    - - 2
+      - 3
+      - {speed_limit: 0}
+    - - 3
+      - 2
+      - {speed_limit: 0}
+    - - 3
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 3
+      - {speed_limit: 0}
+    - - 1
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 1
+      - {speed_limit: 0}
+    - - 5
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 5
+      - {speed_limit: 0}
+    - - 6
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 6
+      - {speed_limit: 0}
+    - - 7
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 7
+      - {speed_limit: 0}
+    - - 8
+      - 9
+      - {speed_limit: 0}
+    - - 9
+      - 8
+      - {speed_limit: 0}
+    - - 9
+      - 10
+      - {speed_limit: 0}
+    - - 10
+      - 9
+      - {speed_limit: 0}
+    - - 11
+      - 12
+      - {speed_limit: 0}
+    - - 12
+      - 11
+      - {speed_limit: 0}
+    - - 12
+      - 13
+      - {speed_limit: 0}
+    - - 13
+      - 12
+      - {speed_limit: 0}
+    - - 0
+      - 14
+      - {speed_limit: 0}
+    - - 14
+      - 0
+      - {speed_limit: 0}
+    - - 10
+      - 15
+      - {dock_name: L4_zoneB, speed_limit: 0}
+    - - 15
+      - 10
+      - {speed_limit: 0, undock_name: L4_zoneB}
+    - - 13
+      - 16
+      - {speed_limit: 0}
+    - - 16
+      - 13
+      - {speed_limit: 0}
+    - - 16
+      - 17
+      - {speed_limit: 0}
+    - - 17
+      - 16
+      - {speed_limit: 0}
+    - - 17
+      - 18
+      - {dock_name: L4_zoneA, speed_limit: 0}
+    - - 18
+      - 17
+      - {speed_limit: 0, undock_name: L4_zoneA}
+    - - 11
+      - 19
+      - {speed_limit: 0}
+    - - 19
+      - 11
+      - {speed_limit: 0}
+    - - 19
+      - 10
+      - {speed_limit: 0}
+    - - 10
+      - 19
+      - {speed_limit: 0}
+    - - 4
+      - 20
+      - {speed_limit: 0}
+    - - 20
+      - 4
+      - {speed_limit: 0}
+    - - 20
+      - 21
+      - {speed_limit: 0}
+    - - 21
+      - 20
+      - {speed_limit: 0}
+    - - 21
+      - 22
+      - {dock_name: L4_zoneC, speed_limit: 0}
+    - - 22
+      - 21
+      - {speed_limit: 0, undock_name: L4_zoneC}
+    - - 0
+      - 23
+      - {}
+    - - 23
+      - 0
+      - {}
+    vertices:
+    - - 15.973461012669734
+      - -3.5135787413142765
+      - {is_parking_spot: false, is_passthrough_point: false, name: L4_liftlobby}
+    - - 10.15713084130442
+      - -3.5831127988483615
+      - {name: ''}
+    - - 10.14975542140976
+      - -10.794070319425117
+      - {name: ''}
+    - - 16.763930236029093
+      - -12.122842070024433
+      - {name: ''}
+    - - 25.400320898850374
+      - -21.522370425204073
+      - {name: ''}
+    - - 9.295108104842187
+      - 8.290949493622946
+      - {name: ''}
+    - - 5.654092928817972
+      - 8.867157799788359
+      - {name: ''}
+    - - 5.101321217241789
+      - 20.000265328934745
+      - {name: ''}
+    - - 3.265646138451929
+      - 21.409558496503138
+      - {name: ''}
+    - - 1.8006823417124127
+      - 25.259522779571256
+      - {name: ''}
+    - - 2.33892597022168
+      - 57.32826586091593
+      - {name: L4_zoneB_start}
+    - - 2.8059934169313343
+      - 63.53233032360104
+      - {name: ''}
+    - - 7.016506719434055
+      - 65.03563522328109
+      - {name: ''}
+    - - 11.300928335641578
+      - 65.09732724918004
+      - {name: ''}
+    - - 16.415915931213746
+      - -6.97515284212804
+      - {lift: service_lift, lift_cabin: service_lift, name: ''}
+    - - 3.252555227349156
+      - 54.669165222732715
+      - {dock_name: L4_zoneB, is_cleaning_zone: true, name: L4_zoneB}
+    - - 11.25788504811747
+      - 71.67734546005636
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_4A_spawn,
+        spawn_robot_name: cleanerBotA_4A, spawn_robot_type: CleanerBotA}
+    - - 12.16720090989002
+      - 73.26534993012905
+      - {name: L4_zoneA_start}
+    - - 13.412691100097568
+      - 74.02033437915438
+      - {dock_name: L4_zoneA, is_cleaning_zone: true, name: L4_zoneA}
+    - - 2.48051982396453
+      - 58.58537589058562
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_4B_spawn,
+        spawn_robot_name: cleanerBotA_4B, spawn_robot_type: CleanerBotA}
+    - - 26.100149138346982
+      - -25.682690624299667
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_4C_spawn,
+        spawn_robot_name: cleanerBotA_4C, spawn_robot_type: CleanerBotA}
+    - - 26.124461420251983
+      - -27.395023258918286
+      - {name: L4_zoneC_start}
+    - - 26.115994826704764
+      - -29.36525403091092
+      - {dock_name: L4_zoneC, is_cleaning_zone: true, name: L4_zoneC}
+    - - 20.528514303336138
+      - -3.0344011616328146
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot_4X_spawn,
+        spawn_robot_name: tinyRobot_4X, spawn_robot_type: TinyRobot}
+  TRL_L5:
+    lanes:
+    - - 0
+      - 1
+      - {speed_limit: 0}
+    - - 1
+      - 0
+      - {speed_limit: 0}
+    - - 2
+      - 3
+      - {dock_name: L5_zoneB, speed_limit: 0}
+    - - 3
+      - 2
+      - {speed_limit: 0, undock_name: L5_zoneB}
+    - - 2
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 2
+      - {speed_limit: 0}
+    - - 1
+      - 5
+      - {door_name: service-lift_L5_door, speed_limit: 0}
+    - - 5
+      - 1
+      - {door_name: service-lift_L5_door, speed_limit: 0}
+    - - 5
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 5
+      - {speed_limit: 0}
+    - - 6
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 6
+      - {speed_limit: 0}
+    - - 7
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 7
+      - {speed_limit: 0}
+    - - 4
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 4
+      - {speed_limit: 0}
+    - - 8
+      - 9
+      - {speed_limit: 0}
+    - - 9
+      - 8
+      - {speed_limit: 0}
+    - - 9
+      - 10
+      - {dock_name: L5_zoneC, speed_limit: 0}
+    - - 10
+      - 9
+      - {speed_limit: 0, undock_name: L5_zoneC}
+    - - 5
+      - 11
+      - {speed_limit: 0}
+    - - 11
+      - 5
+      - {speed_limit: 0}
+    - - 11
+      - 12
+      - {speed_limit: 0}
+    - - 12
+      - 11
+      - {speed_limit: 0}
+    - - 12
+      - 13
+      - {dock_name: L5_zoneA, speed_limit: 0}
+    - - 13
+      - 12
+      - {speed_limit: 0, undock_name: L5_zoneA}
+    - - 1
+      - 14
+      - {}
+    - - 14
+      - 1
+      - {}
+    vertices:
+    - - 16.403417285022297
+      - -6.97719231937738
+      - {lift: service_lift, lift_cabin: service_lift, name: ''}
+    - - 16.084959950546402
+      - -3.4955269252765078
+      - {is_parking_spot: false, is_passthrough_point: false, name: L5_liftlobby}
+    - - 32.180297760628875
+      - -27.271467040577903
+      - {name: L5_zoneB_start}
+    - - 33.748123144699576
+      - -27.2913270192183
+      - {dock_name: L5_zoneB, is_cleaning_zone: true, name: L5_zoneB}
+    - - 29.960160288031297
+      - -28.406228420503822
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_5B_spawn,
+        spawn_robot_name: cleanerBotA_5B, spawn_robot_type: CleanerBotA}
+    - - 8.843584190317566
+      - -3.3836865600893304
+      - {name: ''}
+    - - 8.919478325475811
+      - -18.17071603536054
+      - {name: ''}
+    - - 19.77634720057744
+      - -28.57063915574207
+      - {name: ''}
+    - - 34.87629842344661
+      - -28.29230626739853
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_5C_spawn,
+        spawn_robot_name: cleanerBotA_5C, spawn_robot_type: CleanerBotA}
+    - - 36.440258815130775
+      - -28.278248792300644
+      - {name: L5_zoneC_start}
+    - - 38.462624167927224
+      - -27.76616712064039
+      - {dock_name: L5_zoneC, is_charger: false, is_cleaning_zone: true, name: L5_zoneC}
+    - - 8.78102071191122
+      - 5.847271594092874
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_5A_spawn,
+        spawn_robot_name: cleanerBotA_5A, spawn_robot_type: CleanerBotA}
+    - - 8.827705550154525
+      - 8.219158124855909
+      - {name: L5_zoneA_start}
+    - - 9.852307031692089
+      - 9.92546088518327
+      - {dock_name: L5_zoneA, is_cleaning_zone: true, name: L5_zoneA}
+    - - 19.011275432722158
+      - -3.389980891214492
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot_5X_spawn,
+        spawn_robot_name: tinyRobot_5X, spawn_robot_type: TinyRobot}
+  TRL_L6:
+    lanes:
+    - - 0
+      - 1
+      - {door_name: service-lobby_L6_door, speed_limit: 0}
+    - - 1
+      - 0
+      - {door_name: service-lobby_L6_door, speed_limit: 0}
+    - - 1
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 1
+      - {speed_limit: 0}
+    - - 2
+      - 3
+      - {speed_limit: 0}
+    - - 3
+      - 2
+      - {speed_limit: 0}
+    - - 1
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 1
+      - {speed_limit: 0}
+    - - 5
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 5
+      - {speed_limit: 0}
+    - - 6
+      - 7
+      - {speed_limit: 0}
+    - - 7
+      - 6
+      - {speed_limit: 0}
+    - - 7
+      - 8
+      - {speed_limit: 0}
+    - - 8
+      - 7
+      - {speed_limit: 0}
+    - - 8
+      - 9
+      - {speed_limit: 0}
+    - - 9
+      - 8
+      - {speed_limit: 0}
+    - - 9
+      - 10
+      - {speed_limit: 0}
+    - - 10
+      - 9
+      - {speed_limit: 0}
+    - - 10
+      - 11
+      - {speed_limit: 0}
+    - - 11
+      - 10
+      - {speed_limit: 0}
+    - - 4
+      - 5
+      - {speed_limit: 0}
+    - - 5
+      - 4
+      - {speed_limit: 0}
+    - - 0
+      - 12
+      - {speed_limit: 0}
+    - - 12
+      - 0
+      - {speed_limit: 0}
+    - - 11
+      - 13
+      - {dock_name: L6_zoneA, speed_limit: 0}
+    - - 13
+      - 11
+      - {speed_limit: 0, undock_name: L6_zoneA}
+    - - 4
+      - 14
+      - {speed_limit: 0}
+    - - 14
+      - 4
+      - {speed_limit: 0}
+    - - 14
+      - 15
+      - {dock_name: L6_zoneB, speed_limit: 0}
+    - - 15
+      - 14
+      - {speed_limit: 0, undock_name: L6_zoneB}
+    - - 0
+      - 16
+      - {}
+    - - 16
+      - 0
+      - {}
+    - - 16
+      - 17
+      - {}
+    - - 17
+      - 16
+      - {}
+    vertices:
+    - - 16.105862675218674
+      - -3.9849813119039084
+      - {is_holding_point: false, is_parking_spot: false, is_passthrough_point: false,
+        name: L6_liftlobby}
+    - - 9.2975763651573
+      - -4.009702918785436
+      - {name: central-corridor_l6}
+    - - 9.475964659658201
+      - -10.635160486164636
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot1_charger,
+        spawn_robot_name: tinyRobot1, spawn_robot_type: TinyRobot}
+    - - 16.136588470515935
+      - -12.93516286436865
+      - {is_charger: false, is_holding_point: true, name: tinyRobot0_charger, spawn_robot_name: '',
+        spawn_robot_type: ''}
+    - - 9.151467182038653
+      - 26.334907934297078
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_6B_spawn,
+        spawn_robot_name: cleanerBotA_6B, spawn_robot_type: CleanerBotA}
+    - - 18.350722575337045
+      - 26.881391973289027
+      - {name: ''}
+    - - 18.453601287723185
+      - 36.93868920698973
+      - {name: ''}
+    - - 16.220918511701402
+      - 38.7882628629302
+      - {name: ''}
+    - - 17.19878579953539
+      - 51.0432873760262
+      - {name: ''}
+    - - 18.392494955684267
+      - 52.17295041268407
+      - {name: ''}
+    - - 17.926678204959003
+      - 64.64274242452579
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: cleanerBotA_6A_spawn,
+        spawn_robot_name: cleanerBotA_6A, spawn_robot_type: CleanerBotA}
+    - - 14.426886448807094
+      - 65.07176131728748
+      - {name: L6_zoneA_start}
+    - - 16.374557300010228
+      - -6.978672853106758
+      - {lift: service_lift, lift_cabin: service_lift, name: ''}
+    - - 13.626111058467826
+      - 64.50555745099982
+      - {dock_name: L6_zoneA, is_cleaning_zone: true, name: L6_zoneA}
+    - - 7.042007418381564
+      - 26.397224886686203
+      - {name: L6_zoneB_start}
+    - - 4.890839419005534
+      - 26.26117701218145
+      - {dock_name: L6_zoneB, is_cleaning_zone: true, name: L6_zoneB}
+    - - 16.089424012045228
+      - -2.69708670035547
+      - {name: ''}
+    - - 18.597254902425288
+      - -2.6531167894343923
+      - {is_charger: true, is_holding_point: true, is_parking_spot: true, name: tinyRobot_6X_spawn,
+        spawn_robot_name: tinyRobot_6X, spawn_robot_type: TinyRobot}
